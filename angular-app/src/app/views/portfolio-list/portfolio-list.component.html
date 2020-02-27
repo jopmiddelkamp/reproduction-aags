@@ -1,0 +1,12 @@
+<p>portfolio-list works!</p>
+
+<div *ngFor="let portfolio of portfolios">
+  <h1>{{portfolio.Title}}</h1>
+  <div *ngFor="let project of portfolio.projects">
+    <h2>{{project.Title}}</h2>
+    <h3>{{project.client.Name}}</h3>
+      <p *ngFor="let testimonial of project.client.testimonials">
+        {{testimonial.Description}}
+      </p>
+  </div>
+</div>
