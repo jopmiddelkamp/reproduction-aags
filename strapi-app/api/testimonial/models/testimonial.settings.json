@@ -1,0 +1,20 @@
+{
+  "info": {
+    "name": "Testimonial"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Description": {
+      "type": "string"
+    },
+    "client": {
+      "model": "client",
+      "via": "testimonials"
+    }
+  },
+  "connection": "default",
+  "collectionName": "testimonials"
+}

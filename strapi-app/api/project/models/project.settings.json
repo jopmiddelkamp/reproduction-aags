@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "projects",
+  "info": {
+    "name": "Project"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "client": {
+      "via": "projects",
+      "model": "client"
+    },
+    "portfolios": {
+      "via": "projects",
+      "collection": "portfolio"
+    }
+  }
+}

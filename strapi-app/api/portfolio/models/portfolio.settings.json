@@ -1,0 +1,21 @@
+{
+  "info": {
+    "name": "Portfolio"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "portfolios",
+      "dominant": true
+    }
+  },
+  "connection": "default",
+  "collectionName": "portfolios"
+}

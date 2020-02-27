@@ -1,0 +1,24 @@
+{
+  "connection": "default",
+  "collectionName": "clients",
+  "info": {
+    "name": "Client"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "projects": {
+      "collection": "project",
+      "via": "client"
+    },
+    "testimonials": {
+      "via": "client",
+      "collection": "testimonial"
+    }
+  }
+}
